@@ -46,6 +46,10 @@ class HomeController extends Controller
     {
         return view('forme.parametres');
     }
+    public function comptesecretaire()
+    {
+        return view('auth.register');
+    }
     public function etudiant()
     {
         $etudiants = etudiant::all();

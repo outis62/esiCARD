@@ -68,8 +68,14 @@
           </li>
 
           <li class="treeview">
+                <a class="item-du-menu"  href="{{url('secretaire')}}">
+                        <i class="fa fa-laptop" style="color: #941B0C;"></i> <span class="colorelementmenu">Compte secretaire</span>
+                </a>
+          </li>
+
+          <li class="treeview">
                 <a class="item-du-menu"  href="{{url('nouveau-filiere')}}">
-                        <i class="fa fa-pencil" style="color: #941B0C;"></i> <span class="colorelementmenu">Parametres</span>
+                        <i class="fa fa-gear" style="color: #941B0C;"></i> <span class="colorelementmenu">Parametres</span>
                 </a>
           </li>
 
@@ -78,7 +84,7 @@
           <a class="dropdown-item  item-du-menu" href="{{ route('logout') }}"
           onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
-                        <i class="fa fa-sign-out" style="color: #941B0C;"></i><span class="colorelementmenu">{{ __('Deconnection') }}</span>
+                        <i class="fa fa-ban" style="color: #941B0C;"></i><span class="colorelementmenu">{{ __('Deconnection') }}</span>
        </a>
        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf

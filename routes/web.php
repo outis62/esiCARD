@@ -50,3 +50,4 @@ Route::get('vue/{id}', [HomeController::class, 'vuecard']);
 Route::get('etudiant', [HomeController::class, 'liste']);
 Route::delete('/effacer/{id}/destroy', [HomeController::class, 'delete'])->name('effacer');
 Route::get('/modifier/{id}/edit', [HomeController::class, 'edit'])->name('edit');
+Route::get('secretaire', [HomeController::class, 'comptesecretaire'])->name('secretaire');

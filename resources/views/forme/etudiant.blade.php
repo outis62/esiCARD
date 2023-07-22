@@ -110,9 +110,9 @@
     <div class="col-md-4">
     <select name="genre" class="form-control input-md" required>
         <option value="">Sélectionner le sexe</option>
-        <option value="masculin" {{ old('sexe') == 'masculin' ? 'selected' : '' }}>Masculin</option>
-        <option value="féminin" {{ old('sexe') == 'féminin' ? 'selected' : '' }}>Féminin</option>
-        <option value="autre" {{ old('sexe') == 'autre' ? 'selected' : '' }}>Autre</option>
+        <option value="masculin" {{ old('genre') == 'masculin' ? 'selected' : '' }}>Masculin</option>
+        <option value="féminin" {{ old('genre') == 'féminin' ? 'selected' : '' }}>Féminin</option>
+        <option value="autre" {{ old('genre') == 'autre' ? 'selected' : '' }}>Autre</option>
     </select>
     </div>
 </div>
