@@ -5,7 +5,7 @@
 
  <div class="content-wrapper image-arriere">
 <br>
- <h4 class="text-center text-black">ENREGISTRER </h4>
+ <!-- <h4 class="text-center text-black">ENREGISTRER </h4> -->
 
  <form class="form-horizontal "action=" {{url('ajouter-cycle')}}" method="post">
  @method('post')
@@ -15,7 +15,7 @@
 <div class="form-group" >
   <label class="col-md-4 control-label" style="color: #941B0C;" for="">Cycle</label>  
   <div class="col-md-4">
-  <input id="" name="cycle" type="text" class="form-control input-md">
+  <input id="" name="cycle" type="text" class="form-control input-md" required>
     
   </div>
 </div>
@@ -38,7 +38,7 @@
 <div class="form-group" >
   <label class="col-md-4 control-label" style="color: #941B0C;" >Niveau etude</label>  
   <div class="col-md-4">
-  <input id="" name="niveau" type="text" class="form-control input-md">
+  <input id="" name="niveau" type="text" class="form-control input-md" required>
     
   </div>
 </div>
@@ -61,7 +61,7 @@
 <div class="form-group" >
   <label class="col-md-4 control-label" style="color: #941B0C;" >Filiere</label>  
   <div class="col-md-4">
-  <input id="" name="filiere" type="text" class="form-control input-md">
+  <input id="" name="filiere" type="text" class="form-control input-md" required>
     
   </div>
 </div>
@@ -84,7 +84,7 @@
 <div class="form-group" >
   <label class="col-md-4 control-label" style="color: #941B0C;" for="">Nationalite</label>  
   <div class="col-md-4">
-  <input id="" name="nationalite" type="text"  class="form-control input-md">
+  <input id="" name="nationalite" type="text"  class="form-control input-md" required>
     
   </div>
 </div>
@@ -100,14 +100,14 @@
 
 </form>
 
-<form class="form-horizontal "action=" {{url('ajouter-anneeUniversitaire')}}" method="post">
+<form class="form-horizontal "action=" {{url('ajouter-anneeuniversitaire')}}" method="post">
 
 <div class="page-sectio d-flex">
 @csrf
 <div class="form-group" >
   <label class="col-md-4 control-label" style="color: #941B0C;" for="">AnneeUniversitaire</label>  
   <div class="col-md-4">
-  <input id="" name="anneeUniversitaire" type="text"  class="form-control input-md">
+  <input id="" name="anneeuniversitaire" type="text"  class="form-control input-md" required>
     
   </div>
 </div>

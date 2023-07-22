@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class filiererequest extends FormRequest
+class nationaliterequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,15 +24,14 @@ class filiererequest extends FormRequest
     public function rules()
     {
         return [
-            'filiere' => 'required',
+            'nationalite' => 'required',
         ];
-    } 
-
+    }
     public function messages()
     {
         return [
   
-            'filiere.required'=> 'le champ filiere est requis',
+            'nationalite.required'=> 'le champ nationalite est requis',
            
         ];
     }

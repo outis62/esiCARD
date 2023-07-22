@@ -36,12 +36,15 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-// Route::get('/home', [HomeController::class, 'home'])->name('home');
-// Route::get('nouveau-cycle','CyclesController@create');
-// Route::get('/nouveau-filiere','FilieresController@create');
+
 Route::get('nouveau-filiere', [HomeController::class, 'create']);
+Route::get('nouveau-enregistrement', [HomeController::class, 'etudiant']);
 Route::post('ajouter-cycle', [HomeController::class, 'store']);
 Route::post('ajouter-niveau', [HomeController::class, 'niveau']);
 Route::post('ajouter-filiere', [HomeController::class, 'filiere']);
-// Route::get('nouveau-nationalite','NationalitesController@create');
-// Route::get('nouveau-anneeUniversitaire','AnneeUniversitairesController@create');
+Route::post('ajouter-nationalite', [HomeController::class, 'nationalite']);
+Route::post('ajouter-anneeuniversitaire', [HomeController::class, 'anneeuniversitaire']);
+Route::post('ajouter-etudiant', [HomeController::class, 'ajoutetudiant']);
+Route::get('carte', [HomeController::class, 'carte']);
+Route::get('vue/{id}', [HomeController::class, 'vuecard']);
+Route::get('etudiant', [HomeController::class, 'liste']);

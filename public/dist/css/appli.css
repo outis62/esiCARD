@@ -65,19 +65,28 @@ background-color:rgb(207, 206, 206);
 }
 
 .titre-universite{
-    color: #ff0066;
-   padding-left: 100px;
+    color: blue;
+   padding-left: 90px;
    font-size: 16px;
    font-family: 'Times New Roman', Times, serif
     
   
 }
-
+.maticule{
+    padding-left: 10px;
+}
+.photoetudiant{
+    margin-left: 10px;
+}
 
 .pays{
-    background-color: #b7e944;
+    background-color: #941B0C;
     color: blue;
     font-weight: bold;
+    height: 25px;
+    margin-top: 7px;
+    padding-top: 3px;
+    padding-left: 6px;
 }
 
 

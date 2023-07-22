@@ -12,11 +12,11 @@
         <!-- small box -->
         <div class="small-box bg-aqua cadre-accueil">
           <div class="inner">
-            <h6>NOMBRE DE CARTE PAR ANNEE DE LICENCE</h6>
+            <h6>NOMBRE D'ETUDIANT.S PAR CYCLE</h6>
                   <ul>
-                  <li>LICENCE I :   </li>
-                  <li>LICENCE II :   </li>
-                  <li>LICENCE III :   </li></li>
+                  <li>LICENCE :   [{{$licence}}]</li>
+                  <li>MASTER :   [{{$master}}]</li>
+                  <li>DOCTORAT :   [{{$doctorat}}]</li></li>
                   </ul>
           </div>
           
@@ -28,11 +28,11 @@
         <!-- small box -->
         <div class="small-box bg-green cadre-accueil">
           <div class="inner">
-          <h6>NOMBRE DE CARTE PAR FILLIERE</h6>
+          <h6>NOMBRE D'ETUDIANT.S PAR FILLIERE.S</h6>
                   <ul>
-                  <li>RESEAU :   </li>
-                  <li>SECURITE :   </li>
-                  <li>ANNALYSE ET PROGRAMATION :   </li>
+                  <li>ANNALYSE ET PROGRAMATION :   [{{$Programmation}}]</li>
+                  <li>RESEAU :   [{{$Reseau}}]</li>
+                  <li>SECURITE :   [{{$Securite}}]</li>
                   </ul>
           </div>
          
@@ -44,11 +44,11 @@
         <!-- small box -->
         <div class="small-box bg-yellow cadre-accueil">
           <div class="inner">
-          <h6>NOMBRE DE CARTE PAR NATIONALITE</h6>
+          <h6>NOMBRE D'ETUDIANT.S PAR NATIONALITE</h6>
                     <ul>
-                    <li>BURKINABE</li>
-                    <li>TCHADIEN</li>
-                    <li>MALIEN</li>
+                    <li>BURKINABE : [{{$burkinabe}}]</li>
+                    <li>TCHADIEN : [{{$tchadien}}]</li>
+                    <li>MALIEN : [{{$malienne}}]</li>
                     </ul>
           </div>
          
@@ -60,11 +60,11 @@
         <!-- small box -->
         <div class="small-box bg-red cadre-accueil">
           <div class="inner">
-          <h6>NOMBRE DE CARTE PAR PROMOTION</h6>
+          <h6>NOMBRE D'ETUDIANT.S PAR ANNEE UNIVERSITAIRE</h6>
                       <ul>
-                      <li>2020-2021</li>
-                      <li>2021-2022</li>
-                      <li>2022-2023</li>
+                      <li>2022-2023 : [{{$annee2022_2023}}]</li>
+                      <li>2023-2024 : [{{$annee2023_2024}}]</li>
+                      <li>2024-2025 : [{{$annee2024_2025}}]</li>
                       </ul>
           </div>
           <a href="#" class="small-box-footer">voir plus  <i class="fa fa-arrow-circle-right"></i></a>

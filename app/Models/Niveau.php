@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Niveau extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'niveau',
+    ];
 }
