@@ -44,6 +44,7 @@
 
             <x-primary-button class="ml-3">
                 {{ __('Connecter') }}
+                <img src="{{ asset('images/esi.jpg') }}" width="30" class="logoesi" height="30" alt="LogoESI">
             </x-primary-button>
         </div>
     </form>

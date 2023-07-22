@@ -95,6 +95,7 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer pied-de-page">
     <strong>Copyright &copy; 2023 Bobo Dioulasso.</strong>
+    <img src="{{ asset('images/esi.jpg') }}" width="40" class="logoesi" height="40" alt="LogoESI">
   </footer>
   <div class="control-sidebar-bg"></div>
 </div>

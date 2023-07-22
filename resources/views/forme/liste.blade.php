@@ -36,8 +36,12 @@
                             <td>{{ $etudiant->email}}</td>
                             <td>{{ $etudiant->numero}}</td>
                             <td d-flex>
-                            <a type="button" href="" class="btn btn-primary">Edite</a>
-                            <a type="button" href="" class="btn btn-danger">Delete</a>
+                            <a href="/modifier/{{$etudiant->id}}/edit" class="btn btn-info">Edite</a>
+                            <form action="{{ route('effacer', ['id' => $etudiant->id]) }}" method="POST">
+                                @method('DELETE')
+                                @csrf
+                             <button type="submit" class="btn btn-danger">Supp</button>
+                            </form>
 
                         </td>
                         </tr>

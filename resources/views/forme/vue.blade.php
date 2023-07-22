@@ -29,8 +29,8 @@
 
                 </div> 
                 
-                <a href="{{url('etudiant',$etudiant->email)}}">ENVOYER UN EMAIL A </a><input type="text" style="border: none; outline: none;" value="{{ old('etudiant', $etudiant->nom . ' ' . $etudiant->prenom) }}" readonly><br/>
-                <a href="">IMPRIMER LA CARTE</a>
+                <a href="{{url('etudiant',$etudiant->email)}}" style="color: #941B0C;">ENVOYER UN EMAIL A </a><input type="text" style="border: none; outline: none;" value="{{ old('etudiant', $etudiant->nom . ' ' . $etudiant->prenom) }}" readonly><br/>
+                <a href="" style="color: #941B0C;">IMPRIMER LA CARTE</a>
 
 </div>
 @endsection

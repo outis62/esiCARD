@@ -164,4 +164,19 @@ class HomeController extends Controller
        
         return view('forme.liste', compact('etudiant'));
     }
+    public function delete($id)
+       {
+        $etudiant = Etudiant::find($id);
+        $etudiant->delete();
+
+        return redirect('forme.liste');
+       }
+       public function edit($id)
+       {
+        // Recuperer l'eleve à modifier
+        $etudiant = Etudiant::find($id);
+        return view('forme.edit' ,[
+            'etudiant'=> $etudiant, 
+        ]);
+       }
 }

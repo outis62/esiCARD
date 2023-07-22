@@ -12,6 +12,10 @@ background-color:rgb(207, 206, 206);
 .logounb{
     margin-left: 120px;
 }
+.logoesi{
+    border-radius: 15px;
+    margin-left: 10px;
+}
 .souvenir{
     color: blue !important;
 }
