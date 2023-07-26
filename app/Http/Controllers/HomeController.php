@@ -144,7 +144,7 @@ class HomeController extends Controller
             $path = $request->file('photo')->storeAs('public', $fileName);
             $etudiant->photo = '/storage/' . $fileName;
         }
-        // $etudiant->image = $request->input('image');
+        // $etudiant->photo = $request->input('photo');
         $etudiant->save();
         // Rediriger ou effectuer d'autres actions après l'enregistrement
         return redirect('nouveau-enregistrement');

@@ -4,7 +4,6 @@
  @section('page-content')
 
 
-</head> 
 
 <body >
 <div class="content-wrapper image-arriere">
@@ -26,9 +25,9 @@
                     </select>
                     </div >
                 </div>
-                <br><br>
+                <br/><br/>
                 <div>
-                    <label  class="col-md-4 control-label" style="color: #941B0C;">Niveauetu</label>
+                    <label  class="col-md-4 control-label" style="color: #941B0C;">NiveauEtu</label>
                     <div class="col-md-4">
                     <select name="niveau" class="form-control input-md" required>
                     @foreach($niveaux as $niveau)
@@ -37,7 +36,7 @@
                     </select>
                     </div >
                 </div>
-                <br><br>
+                <br/><br/>
                 <div>
                     <label  class="col-md-4 control-label" style="color: #941B0C;">Filiere</label>
                     <div class="col-md-4">
@@ -48,6 +47,7 @@
                     </select>
                     </div >
                 </div>
+                <br/><br/>
                 <div>
                     <label  class="col-md-4 control-label" style="color: #941B0C;">Nationalite</label>
                     <div class="col-md-4">
@@ -56,9 +56,9 @@
                             <option value="{{$nationalite->nationalite}}">{{$nationalite->nationalite}}</option>
                         @endforeach
                     </select>
-                    </div >
+                    </div>
                 </div>
-                <br><br>
+                <br/><br/>
                 <div>
                     <label  class="col-md-4 control-label" style="color: #941B0C;">AnneUniv</label>
                     <div class="col-md-4">
@@ -69,7 +69,7 @@
                     </select>
                     </div >
                 </div>
-                <br><br>
+                <br/><br/>
                  </div>
                  
 <!-- Text input-->
@@ -112,7 +112,7 @@
         <option value="">Sélectionner le sexe</option>
         <option value="masculin" {{ old('genre') == 'masculin' ? 'selected' : '' }}>Masculin</option>
         <option value="féminin" {{ old('genre') == 'féminin' ? 'selected' : '' }}>Féminin</option>
-        <option value="autre" {{ old('genre') == 'autre' ? 'selected' : '' }}>Autre</option>
+        <option value="autres" {{ old('genre') == 'autre' ? 'selected' : '' }}>Autre</option>
     </select>
     </div>
 </div>

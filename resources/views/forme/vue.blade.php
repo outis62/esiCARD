@@ -17,7 +17,7 @@
                         
                                                  <li class=" reference">Nom: <span class="mise-en-forme">{{$etudiant->nom}}</span></li>
                                                  <li  class=" reference">Prenom: <span class="mise-en-forme"> {{$etudiant->prenom}}</span></li>
-                                                 <li  class=" reference">Cyle de: <span class="mise-en-forme">{{$etudiant->cycle}}</span></li>
+                                                 <li  class=" reference">Cycle de: <span class="mise-en-forme">{{$etudiant->cycle}}</span></li>
                                                  <li  class=" reference">Niveau: <span class="mise-en-forme">{{$etudiant->niveau}}</span></li>
                                                  <li  class=" reference">Filiere: <span class="mise-en-forme">{{$etudiant->filiere}}</span></li>
                                                  <li  class=" reference">Annee universitaire: <span class="mise-en-forme">{{$etudiant->anneeuniversitaire}}</span></li>
